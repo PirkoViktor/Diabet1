@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Diabet</string>
+    <string name="action_settings">Налаштування</string>
+    <string name="action_statistics">Статистика</string>
+    <string name="action_google_drive">Import/Export</string>
+    <string name="action_delete">Видалити виділені записи</string>
+
+    <string name="google_drive_icon">Google Drive</string>
+
+    <string name="da">Так</string>
+    <string name="ne">Ні</string>
+    <string name="ok">Гаразд</string>
+    <string name="cancel">Скасувати</string>
+
+    <string name="settings_od">Від:</string>
+    <string name="settings_do">До:</string>
+    <string name="settings_vrednost">Значення:</string>
+    <string name="title_activity_settings">Налаштування</string>
+    <string name="title_activity_statistics">Статистика</string>
+
+    <string name="active">Активність</string>
+    <string name="eat">Їжа</string>
+    <string name="addrecord">Інсулін</string>
+
+    <string name="zahtevano_polje"> Обовязкові поля позначені *</string>
+    <string name="dates">Дата:</string>
+    <string name="sugar1">Цукор:</string>
+    <string name="sugar1_req">Цукор*:</string>
+    <string name="sugar">Цукри:</string>
+    <string name="count_oh">Кількість OH:</string>
+    <string name="count_oh_req">Кількість OH*:</string>
+    <string name="units_insulins">Одиниць інсуліну:</string>
+    <string name="tip">Тип:</string>
+    <string name="opiss">Опис:</string>
+    <string name="end_active">Кінець активності:</string>
+    <string name="izračunaj_potreben_insulin">Обчислити необхідний інсулін</string>
+
+    <string name="dodaj">Додати</string>
+    <string name="shrani">Зберегти</string>
+    <string name="prekini">Зупинити</string>
+    <string name="koncaj_active">Завершити активність</string>
+
+    <string name="prenesi_v_google_drive">Завантажити на Google Диск</string>
+    <string name="prenesi_iz_google_drive">Завантажити з Google Диска</string>
+    <string name="prenos">Я передаю&#8230;</string>
+
+    <string name="load_error">Імпортувати дані з диска (якщо такі є)?</string>
+
+    <string name="layout_addrecord">СКЛАД </string>
+    <string name="layout_eat">СКЛАД </string>
+    <string name="layout_active">РОЗМІР</string>
+
+    <string name="icon_text">Іконка</string>
+
+    <string name="statistics_vse">Всі записи:</string>
+    <string name="statistics_addrecordi">Записи:</string>
+    <string name="statistics_eati">Їжа:</string>
+    <string name="statistics_activei">Заходи:</string>
+    <string name="min_vred">Min:</string>
+    <string name="max_vred">Max:</string>
+    <string name="avg_vred">Avg:</string>
+</resources>

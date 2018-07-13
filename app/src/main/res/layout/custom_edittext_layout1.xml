@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/aboutins"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/insulinCounter"
+        android:hint="Опис" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/insulinCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/tv_reminder_time_desc1"
+        android:hint="Інсулін"
+        android:inputType="number" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/timerSwitch2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/aboutins"
+        android:checked="false"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tv_reminder_time_desc1"
+
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/aboutins"
+        android:layout_alignParentStart="true"
+        android:text="08:00"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="49dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="9dp"
+        android:text="X" />
+
+</RelativeLayout>

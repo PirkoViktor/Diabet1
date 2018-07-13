@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/parentPanel"
+    tools:contextView="com.pirko.diabetolog.com.pirko.diabetolog.ActivityMain">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            style="@style/Platform.Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+
+            android:layout_height="34dp"
+            android:background="#1E90FF"
+            android:popupBackground="?attr/colorPrimary"
+            android:spinnerMode="dropdown" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_activity_main_window"
+         />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorAccent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        android:id="@+id/rl_addrecord">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_addrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/addrecord128" />
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:layout_toStartOf="@id/fab_addrecord"
+            android:text="Вимір цукру"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        android:id="@+id/rl_eat">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/eat128" />
+
+        <TextView
+            android:id="@+id/tv_eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:layout_toStartOf="@id/fab_eat"
+            android:text="@string/eat"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        android:id="@+id/rl_active">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/active128" />
+
+        <TextView
+            android:id="@+id/tv_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:layout_toStartOf="@id/fab_active"
+            android:text="@string/active"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
